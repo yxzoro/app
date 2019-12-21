@@ -8,6 +8,10 @@
 flutter底层有一个dart绘图引擎,负责渲染出上层ui(用dart写),并且集成了不同平台的设备api.
 uniapp底层有一个webview浏览器引擎,负责渲染出上层ui(用web写),并且集成了不同平台的设备api.
 
+当然这里还有一个区别就是: dart绘图引擎 和 webview浏览器引擎 的区别
+  dart绘图引擎是由google自家实现的统一标准,
+  而webview在android和ios平台是各自实现的浏览器引擎,会有些兼容性问题.
+
 优缺点:
 1.flutter的dart编译成二进制且dart绘图引擎性能很好,flutter的性能>=原生性能!
   flutter框架本身就自带了vue+mui的效果,即是mvvm框架又是ui框架,还有原生性能!
