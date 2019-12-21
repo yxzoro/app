@@ -1,0 +1,5 @@
+name: my_app
+dependencies:
+      http: ^0.12.0
+
+
