@@ -15,7 +15,6 @@ uniapp底层有一个webview浏览器引擎,负责渲染出上层ui(用web写),�
   flutter其实也可以支持所有端,每个端实现一个dart绘图引擎即可.(但不会专门支持中国小程序的)
   * flutter的缺点只有一个: 不支持中国微信推出的小程序.
 
-
 1.uniapp的webview引擎执行web代码,webview的性能 < 原生 <= flutter,但是足够用(业务类app)!
   uniapp搭配vue+mui这2个框架,也是mvvm+ui框架.
   uniapp是国内dcloud推出,在国内开发者使用量也挺多.
