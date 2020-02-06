@@ -2,24 +2,41 @@
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
 		<view class="text-area">
-			<text class="title">{{title}}</text>
+			<text id="title" class="title">{{title}}</text>
+			<br>   
+			<button v-on:click="test_funcion">测试按钮</button>
 		</view>
 	</view>
 </template>
 
 <script>
 	export default {
+		//uniapp的写法和vue原版稍有不同(基本一样),一个组件被合并进了一个vue文件了,
+		//el选取器也不需要了,uniqpp里面直接给每个组件/对象写 属性和方法 即可
+		
+		//属性
 		data() {
 			return {
-				title: 'Hello'
+				title: 'test',
 			}
 		},
-		onLoad() {
-
-		},
+		
+		//方法
 		methods: {
-
-		}
+			
+			test_funcion: function () {
+				this.title = this.title + "->";
+			},
+			
+		},
+		
+		// 页面加载时的执行逻辑
+		onLoad() {
+			uni.showModal({
+				title: "test"
+			})
+		},
+		
 	}
 </script>
 
